@@ -8,5 +8,9 @@ public class Jaguar extends Felino {
     public void comer() {
         System.out.println("Como conejos y tejones");
     }
+    public Jaguar()
+    {
+        setTipo("jaguar");
+    }
 
 }

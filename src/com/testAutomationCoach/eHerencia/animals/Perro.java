@@ -1,11 +1,23 @@
 package com.testAutomationCoach.eHerencia.animals;
 
-public class Perro extends Animal {
+public class Perro extends Canino{
 
+	public Perro()
+	{
+		setTipo("perro");
+	}
+
+	@Override
 	public void hacerRuido() {
-		System.out.println("Guau guau!");
+		System.out.println("El perro hace guagua");
+		super.hacerRuido();
 	}
-	public void comer() {
-		System.out.println("Como Dowchow y carne de pollo");
+
+	@Override
+	public void orinar() {
+		super.orinar();
+		System.out.println("Tiene que aprender donde orinar");
 	}
+
+
 }

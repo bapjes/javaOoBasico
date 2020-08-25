@@ -8,4 +8,8 @@ public class Puma extends Felino {
     public void comer() {
         System.out.println("Como mapaches y jabalies");
     }
+    public Puma()
+    {
+        setTipo("puma");
+    }
 }

@@ -2,7 +2,17 @@ package com.testAutomationCoach.eHerencia.animals;
 
 public class Canino extends Animal {
 
-    public void recorrerTerreno() {
-        System.out.println("Soy animal social y ando en manadas.");
+    public void socializar()
+    {
+        System.out.println("Comportamiento : Desarrollo social en manada corren por su presa");
     }
+
+    @Override
+    public void comer() {
+        super.comer();
+        System.out.println("Alimentacion : Se alimentan tanto de fuentes animales como vegetales.");
+
+    }
+
+
 }
